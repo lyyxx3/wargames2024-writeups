@@ -68,7 +68,8 @@ Using the command, `hashcat -a0 -m5600 hash.txt /usr/share/wordlists/rockyou.txt
 We finally got the password: `password<3` <br>
 ![image](https://github.com/user-attachments/assets/eabde18d-14e1-495f-96a9-ec153c8cb74e)
 <br>
-![image](https://github.com/user-attachments/assets/27fc345c-993e-4cb2-a3b8-2cc9f6c7f247)
+![image](https://github.com/user-attachments/assets/7a3f19a7-49fa-46a5-bffa-d1197ee4dee7)
+
 
 
 
