@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/be3e6abe-225a-4d84-9e52-98af6928dafb)![image](https://github.com/user-attachments/assets/6c9df678-888c-4e0c-a6cd-bba64d5fd120)## **Analyzing the traffic**
+## **Analyzing the traffic**
 In this challenge, we are given a pcapng file, which mostly consists of SMB traffic. After putting  `smb2` as filter, we can see some encrypted traffic.
 <br>
 
