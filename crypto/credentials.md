@@ -15,14 +15,16 @@ So, the user `osman` is on line 337 <br>
 <br>
 Their corresponding password would be `ZJPB{e6g180g9f302g8d8gddg1i2174d0e212}`
 <br>
+<br>
 
+## **Step 2: Decoding the Flag**
 Using a cipher identifier website, <br>
 ![image](https://github.com/user-attachments/assets/21234058-f2c9-4408-92ee-f838fcbda623)
 <br>
 <br>
 
 It is an easy category challenge, so I tried Caesar Cipher decoder. <br>
-And there, we got the flag.
+And there, we got the flag. <br>
 ![image](https://github.com/user-attachments/assets/bd42dbb1-23a6-4a1e-ba07-89471d88ef13)
 <br>
 <br>
