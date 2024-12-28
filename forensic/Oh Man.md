@@ -75,6 +75,7 @@ We finally got the password: `password<3` <br>
 Using the password, let's decrypt the traffic by setting the NT Password. Click Apply then Ok. <br>
 ![image](https://github.com/user-attachments/assets/5ec36a80-47c7-4a8e-9914-1f0f0d150c01)
 <br>
+<br>
 We can now export objects. Exporting all of them by clicking `Save All` .<br>
 ![image](https://github.com/user-attachments/assets/e4c7ac5e-22e4-447c-ac37-5c5255789dac)
 <br>
@@ -84,6 +85,7 @@ We can now export objects. Exporting all of them by clicking `Save All` .<br>
 ## **Analyzing the Exported Objects**
 After looking through the files, the file `RxHmEj` contained something interesting. <br>
 ![image](https://github.com/user-attachments/assets/9a88c1fe-0e5f-4abf-918f-2d21528571df)
+<br>
 <br>
 I was pretty sure this was the last step to the flag (hopefully). But then realized I didn't have the `scripts/restore_signature` file. <br>
 At first I thought it was file exported through SMB traffic but there was no such file. <br>
@@ -99,7 +101,7 @@ Scrolling down, found an exact match of the command. <br>
 ![image](https://github.com/user-attachments/assets/66d53d82-c163-4a41-8569-e22eda3aa531)
 <br>
 
-## **Getting the Flag
+## **Getting the Flag**
 
 Then, I did the following steps to install `nanodump` to my machine and start following the commands in the `RxHmEj` file. 
 <br> 
