@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6c9df678-888c-4e0c-a6cd-bba64d5fd120)## **Analyzing the traffic**
+![image](https://github.com/user-attachments/assets/be3e6abe-225a-4d84-9e52-98af6928dafb)![image](https://github.com/user-attachments/assets/6c9df678-888c-4e0c-a6cd-bba64d5fd120)## **Analyzing the traffic**
 In this challenge, we are given a pcapng file, which mostly consists of SMB traffic. After putting  `smb2` as filter, we can see some encrypted traffic.
 <br>
 
@@ -71,6 +71,69 @@ We finally got the password: `password<3` <br>
 ![image](https://github.com/user-attachments/assets/7a3f19a7-49fa-46a5-bffa-d1197ee4dee7)
 <br>
 <br>
+Using the password, let's decrypt the traffic by setting the NT Password. Click Apply then Ok. <br>
+![image](https://github.com/user-attachments/assets/5ec36a80-47c7-4a8e-9914-1f0f0d150c01)
+<br>
+We can now export objects. Exporting all of them by clicking `Save All` .<br>
+![image](https://github.com/user-attachments/assets/e4c7ac5e-22e4-447c-ac37-5c5255789dac)
+<br>
+<br>
+<br>
+
+## **Analyzing the Exported Objects
+After looking through the files, the file `RxHmEj` contained something interesting. <br>
+![image](https://github.com/user-attachments/assets/9a88c1fe-0e5f-4abf-918f-2d21528571df)
+<br>
+I was pretty sure this was the last step to the flag (hopefully). But then realized I didn't have the `scripts/restore_signature` file. <br>
+At first I thought it was file exported through SMB traffic but there was no such file. <br>
+Thought of manually fixing the bytes of file `20241225_1939.log` but was too noob to do it, idk how TT <br>
+So, I googled it, hoping to find a script online. And found this: (https://github.com/fortra/nanodump) <br>
+![image](https://github.com/user-attachments/assets/153c418b-9735-439c-88a2-2f452cc3a8f1)
+<br>
+![image](https://github.com/user-attachments/assets/b7c2b44d-2377-4374-8cb0-870ae7d58555)
+<br>
+<br>
+
+Scrolling down, found an exact match of the command. <br>
+![image](https://github.com/user-attachments/assets/66d53d82-c163-4a41-8569-e22eda3aa531)
+<br>
+
+## **Getting the Flag
+
+Then, I did the following steps to install `nanodump` to my machine and start following the commands in the `RxHmEj` file. 
+<br> 
+<br>
+`git clone https://github.com/fortra/nanodump.git`  <br>
+Then, copied the `20241225_1939.log` into the downloaded nanodump folder. 
+<br>
+<br>
+`cd nanodump`
+`scripts/restore_signature 20241225_1939.log` <br>
+![image](https://github.com/user-attachments/assets/adf9aed8-9da2-4932-86ea-a3a832743b70)
+<br>
+<br>
+<br>
+Scrolling down, we found the flag. `wgmy{fbba48bee397414246f864fe4d2925e4}`
+![image](https://github.com/user-attachments/assets/85182994-1232-4f14-b542-52b4ef5786a0)
+<br>
+<br>
+**Flag:** wgmy{fbba48bee397414246f864fe4d2925e4}
+
+Honestly felt like dying, this should not be in easy category
+![image](https://github.com/user-attachments/assets/be4beeed-d360-4808-930c-118b43d25aa2)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
