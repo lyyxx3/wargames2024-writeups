@@ -1,4 +1,4 @@
-### **Analyzing the traffic**
+## **Analyzing the traffic**
 In this challenge, we are given a pcapng file, which mostly consists of SMB traffic. After putting  `smb2` as filter, we can see some encrypted traffic.
 <br>
 
@@ -20,16 +20,16 @@ Now, in order to decrypt the traffic, we will be needing the `NT Password`. You 
 ![image](https://github.com/user-attachments/assets/d9dabdcb-e9a0-4649-a362-4bb4fc72d986)
 
 
-### **Cracking the NT Password**
+## **Cracking the NT Password**
 To crack the NT Password, we will be needing some values. This all can be found in SMB packets. <br>
-I remember doing a challenge in HTB that had a similar thing, so I referenced a bit from this writeup here: [HTB Noxious Writeup](https://medium.com/@jbtechmaven/hackthebox-noxious-sherlock-walkthrough-def721fe4f50), from Task 6 to 8.
+I remember doing a challenge in HTB that had a similar thing, <br> so I referenced a bit from this writeup here: [HTB Noxious Writeup](https://medium.com/@jbtechmaven/hackthebox-noxious-sherlock-walkthrough-def721fe4f50), from Task 6 to 8.
 <br>
 <br>
 
-We will be needing these values, now let's find these one by one.
+We will be needing these values, now let's find these one by one. <br>
 `User::Domain:ServerChallenge:NTProofStr:NTLMv2Response`
 
-# Finding Username and Domain
+### Finding Username and Domain
 
 
 
