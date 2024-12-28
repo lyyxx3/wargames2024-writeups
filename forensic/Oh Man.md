@@ -60,6 +60,7 @@ NTLMv2Response (Removed the first 16 bytes as those are the value of NTProofStr)
 Now, we have finally got all the values we need to crack the NT Password. <br>
 `Administrator::DESKTOP-PMNU0JK:7aaff6ea26301fc3:ae62a57caaa5dd94b68def8fb1c192f3:01010000000000008675779b2e57db01376f686e57504d770000000002001e004400450053004b0054004f0050002d0050004d004e00550030004a004b0001001e004400450053004b0054004f0050002d0050004d004e00550030004a004b0004001e004400450053004b0054004f0050002d0050004d004e00550030004a004b0003001e004400450053004b0054004f0050002d0050004d004e00550030004a004b00070008008675779b2e57db010900280063006900660073002f004400450053004b0054004f0050002d0050004d004e00550030004a004b000000000000000000`
 <br>
+<br>
 We can now actually start cracking, save all the values we got into a txt file and crack it using `hashcat`. <br>
 Using the command, `hashcat -a0 -m5600 hash.txt /usr/share/wordlists/rockyou.txt` <br>
 ![image](https://github.com/user-attachments/assets/6c3cbc27-1f7d-4ed5-9c5a-a4bf3ad807f5)
@@ -80,7 +81,7 @@ We can now export objects. Exporting all of them by clicking `Save All` .<br>
 <br>
 <br>
 
-## **Analyzing the Exported Objects
+## **Analyzing the Exported Objects**
 After looking through the files, the file `RxHmEj` contained something interesting. <br>
 ![image](https://github.com/user-attachments/assets/9a88c1fe-0e5f-4abf-918f-2d21528571df)
 <br>
@@ -107,7 +108,7 @@ Then, I did the following steps to install `nanodump` to my machine and start fo
 Then, copied the `20241225_1939.log` into the downloaded nanodump folder. 
 <br>
 <br>
-`cd nanodump`
+`cd nanodump` <br>
 `scripts/restore_signature 20241225_1939.log` <br>
 ![image](https://github.com/user-attachments/assets/adf9aed8-9da2-4932-86ea-a3a832743b70)
 <br>
