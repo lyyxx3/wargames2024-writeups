@@ -4,7 +4,7 @@
 <br>
 
 
-## **Analyzing the traffic**
+## **Step 1: Analyzing the traffic**
 In this challenge, we are given a pcapng file, which mostly consists of SMB traffic. After putting  `smb2` as filter, we can see some encrypted traffic.
 <br>
 
@@ -26,7 +26,7 @@ Now, in order to decrypt the traffic, we will be needing the `NT Password`. You 
 ![image](https://github.com/user-attachments/assets/d9dabdcb-e9a0-4649-a362-4bb4fc72d986)
 
 
-## **Cracking the NT Password**
+## **Step 2: Cracking the NT Password**
 To crack the NT Password, we will be needing some values. This all can be found in SMB packets. <br>
 I remember doing a challenge in HTB that had a similar thing, <br> so I referenced a bit from this writeup here: [HTB Noxious Writeup](https://medium.com/@jbtechmaven/hackthebox-noxious-sherlock-walkthrough-def721fe4f50), from Task 6 to 8.
 <br>
@@ -88,7 +88,7 @@ We can now export objects. Exporting all of them by clicking `Save All` .<br>
 <br>
 <br>
 
-## **Analyzing the Exported Objects**
+## **Step 3: Analyzing the Exported Objects**
 After looking through the files, the file `RxHmEj` contained something interesting. <br>
 ![image](https://github.com/user-attachments/assets/9a88c1fe-0e5f-4abf-918f-2d21528571df)
 <br>
@@ -107,7 +107,7 @@ Scrolling down, found an exact match of the command. <br>
 ![image](https://github.com/user-attachments/assets/66d53d82-c163-4a41-8569-e22eda3aa531)
 <br>
 
-## **Getting the Flag**
+## **Step 4 : Getting the Flag**
 
 Then, I did the following steps to install `nanodump` to my machine and start following the commands in the `RxHmEj` file. 
 <br> 
