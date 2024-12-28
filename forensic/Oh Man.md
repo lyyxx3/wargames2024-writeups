@@ -1,3 +1,9 @@
+# Forensic Challenge: Oh Man
+![image](https://github.com/user-attachments/assets/09c4b944-b19e-4431-9a34-0c4314dacd16)
+<br>
+<br>
+
+
 ## **Analyzing the traffic**
 In this challenge, we are given a pcapng file, which mostly consists of SMB traffic. After putting  `smb2` as filter, we can see some encrypted traffic.
 <br>
