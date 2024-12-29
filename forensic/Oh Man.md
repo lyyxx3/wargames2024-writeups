@@ -69,7 +69,6 @@ Now, we have finally got all the values we need to crack the NT Password. <br>
 <br>
 We can now actually start cracking, save all the values we got into a txt file and crack it using `hashcat`. <br>
 Using the command, `hashcat -a0 -m5600 hash.txt /usr/share/wordlists/rockyou.txt` <br>
-![image](https://github.com/user-attachments/assets/6c3cbc27-1f7d-4ed5-9c5a-a4bf3ad807f5)
 <br>
 <br>
 We finally got the password: `password<3` <br>
