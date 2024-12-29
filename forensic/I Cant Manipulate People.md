@@ -5,10 +5,10 @@
 
 ## **Step 1: Analyzing the traffic**
 I first realize there was quite a lot of icmp packets, so I was pretty sure we need to extract the data payloads and that would be the flag. <br>
-There's quite a lot other challenges in other ctf like this <br>
+There's quite a lot of challenges like this in other ctf <br>
 ![image](https://github.com/user-attachments/assets/ea13cb2b-1f2f-4e43-ad88-9bac888db1bf)
 
-Filtering the icmp protocol, I looked at the data payload of the first payload. <br>
+Filtering the icmp protocol, I looked at the data payload of the first packet. <br>
 ![image](https://github.com/user-attachments/assets/7ac8b1d2-e2ce-43ba-b296-b90817e05633)
 ![image](https://github.com/user-attachments/assets/bbf23a30-ad73-49d3-85b2-dd832ac89e88)
 <br>
